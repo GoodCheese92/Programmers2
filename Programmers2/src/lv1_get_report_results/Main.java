@@ -37,19 +37,15 @@ k번 이상 신고된 유저는 게시판 이용이 정지되며, 해당 유저�
 
 
 public class Main {
-	public static void main(String[] args) {
-		String[] id_list = {"muzi", "frodo", "apeach", "neo"};
-		String[] report = {"muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi"};
-		int k = 2;
-		Solution_v01 sl = new Solution_v01();
-		sl.solution(id_list, report, k);
+    public static void main(String[] args) {
+        String[] id_list = {"muzi", "frodo", "apeach", "neo"};
+        String[] report = {"muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi"};
+        int k = 2;
 
-		Solution_v02 sl2 = new Solution_v02();
-		sl2.solution(id_list, report, k);
-		System.out.println("hu");
-		
-		
-		
-		
-	} // end of main
+        Solution_v02 sl2 = new Solution_v02();
+        for (int i = 0; i < sl2.solution(id_list, report, k).length; i++) {
+            System.out.print("answer[" + i + "] : " + sl2.solution(id_list, report, k)[i] + " ");
+        } // for
+
+    } // end of main
 } // end of class
