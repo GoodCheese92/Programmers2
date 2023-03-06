@@ -43,6 +43,10 @@ public class Main {
 		int k = 2;
 		Solution_v01 sl = new Solution_v01();
 		sl.solution(id_list, report, k);
+
+		Solution_v02 sl2 = new Solution_v02();
+		sl2.solution(id_list, report, k);
+		System.out.println("hu");
 		
 		
 		
